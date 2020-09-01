@@ -1,4 +1,5 @@
 import React from 'react';
+// import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/FontAwesome';
@@ -15,6 +16,7 @@ const MainTabBar = () => {
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused }) => {
             let iconName;
+
             // Customize the icon we display based on the tab route
             if (route.name === 'About') {
               iconName = 'info-circle';
@@ -33,5 +35,4 @@ const MainTabBar = () => {
     </NavigationContainer>
   );
 };
-
 export default MainTabBar;
